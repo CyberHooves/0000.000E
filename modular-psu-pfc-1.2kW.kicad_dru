@@ -1,0 +1,6 @@
+(version 1.0)
+
+# 0.5mm clearance between each other, 2mm to everything else
+(rule "HT1_group"
+	(condition "A.NetClass == 'HT1' && B.NetClass == 'HT1'")
+	(constraint clearance (min 0.5mm)))
